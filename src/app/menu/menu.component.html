@@ -1,0 +1,18 @@
+<!-- Kategori Butonları -->
+<div class="category-buttons">
+  <button *ngFor="let category of categories" (click)="selectCategory(category)">
+    {{ category }}
+  </button>
+</div>
+
+<!-- Menü Listesi (Yatay Sıralı) -->
+<div class="menu-items">
+  <div *ngFor="let item of menu">
+    <div class="menu-item" *ngIf="selectedCategory === 'Tümü' || item.category === selectedCategory">
+      <img [src]="item.image" alt="{{ item.name }}" />
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.price }}₺</p>
+      <p class="description">{{ item.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  margin-top: 20px;
+}
